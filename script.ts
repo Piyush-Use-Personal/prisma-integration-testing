@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client"
 
-const prisma = new PrismaClient()
+export const prisma = new PrismaClient()
 
 // A `main` function so that we can use async/await
 async function main() {
@@ -90,12 +90,12 @@ async function main() {
     .posts()
   console.log(`Retrieved all posts from a specific user: ${postsByUser}`)
 }
-
-main()
-  .catch((e) => {
-    console.error(e)
-    process.exit(1)
-  })
-  .finally(async () => {
-    await prisma.$disconnect()
-  })
+export default main
+// main()
+//   .catch((e) => {
+//     console.error(e)
+//     process.exit(1)
+//   })
+//   .finally(async () => {
+//     await prisma.$disconnect()
+//   })

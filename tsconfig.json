@@ -1,9 +1,10 @@
 {
-    "compilerOptions": {
-      "sourceMap": true,
-      "outDir": "dist",
-      "strict": true,
-      "lib": ["esnext", "dom"],
-      "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": false
   }
+}
